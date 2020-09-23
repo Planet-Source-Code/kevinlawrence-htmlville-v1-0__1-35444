@@ -1,0 +1,383 @@
+<html>
+<head>
+<title>HTML Lesson 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="75%" border="0" cellspacing="1" cellpadding="1">
+  <tr> 
+    <td><a href="#Paragraphs">Paragraphs</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#Headlines">Headlines</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#Links">Links</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#Mailtos">Mailtos</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#fontsize">Font Size</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#fontcolor">Font Color</a></td>
+  </tr>
+  <tr>
+    <td><a href="#bolditalic">Bold and Italic Text</a></td>
+  </tr>
+</table>
+<a name="Paragraphs"><h2>Paragraphs</h2></a>
+<pre>&#60;p&#62; begins a paragraph
+</pre>
+
+<blockquote>
+<p>Paragraph tags are the most ubiquitous and user-friendly of all the HTML tags. Inserted at the beginning of each paragraph, the &#60;p&#62; tag skips a line before each block of text. There's no need to close off the &#60;p&#62; tag with a &#60;/p&#62;
+
+
+; it's implied when you go on to the next tag.
+
+<p><b>The HTML for two plain-Jane paragraphs will look something like this:</b>
+
+
+<pre>&#60;p&#62;Here I am in supposedly peaceful NZ and the 
+cop is suggesting that we put deadbolts on
+our BEDROOM doors! Can you imagine? She also
+recommended placing tripwires, connected to 
+sirens, all around the house. Sheesh. 
+
+&#60;p&#62;Of course, when we went home, we noted our front
+window was open, our bathroom window was open,
+and my roommate Wendy had found her bedroom
+window open, even though she absolutely swears
+it was shut when she left.  Hmmmm..... 
+</pre></blockquote>
+
+<p><b>They'll appear like this:</b>
+
+<blockquote>
+<p>Here I am in supposedly peaceful NZ and the 
+cop is suggesting that we put deadbolts on
+our BEDROOM doors! Can you imagine? She also
+recommended placing tripwires, connected to 
+sirens, all around the house. Sheesh. 
+
+<p>Of course, when we went home, we noted our front
+window was open, our bathroom window was open,
+and my roommate Wendy had found her bedroom
+window open, even though she absolutely swears
+it was shut when she left.  Hmmmm..... 
+</blockquote>
+
+<a name="Headlines"><h2>Headlines</h2></a>
+
+<p>
+<blockquote> &#60;h1&#62; turns on large headlines &#60;/h1&#62; turns off large 
+  headlines &#60;h3&#62; turns on medium sized headlines &#60;/h3&#62; turns off 
+  medium sized headlines &#60;h6&#62; turns on small headlines &#60;/h6&#62; turns 
+  off small headlines You get the idea.</blockquote>
+<p>Once upon a time, someone decreed that the headline of an HTML 
+page should be larger and bolder than the rest of the text - just like in the tabloids. And it was so. Headlines can range in size from h1 (quite large) to h6 (quite small). All in all, the headline tag isn't too hard to master. They're switched on with a
+
+ tag such as &#60;h1&#62; and switched off with a corresponding &#60;/h1&#62;. 
+
+<p><b>If you write in your HTML file:</b>
+
+<blockquote>&#60;h1&#62;EXTRA! COW KILLS FARMER WITH AX&#60;/h1&#62</blockquote>
+<p><b>You'll get:</b>
+
+<blockquote><h1
+>EXTRA! COW KILLS FARMER WITH AX</h1></blockquote>
+
+<p><b>If you type:</b>
+
+<blockquote>&#60;h2&#62Teacher Strikes Idle Kids!&#60;/h2&#62</blockquote>
+<p><b>You'll get:</b>
+
+<blockquote><h2>Teacher Strikes Idle Kids!</h2></blockquote>
+
+<p>Pret
+ty easy, huh? Well, if you're already getting bored, we know one headline trick you can exploit for your own happiness (if you're using Netscape). By using, say, &#60;h2&#62 along with &#60;pre&#62 you can preformat text (saving your returns and spaces) i
+
+n a large, bold font, traipsing blithely past the philosophical differences between the fixed-width and proportional type faces. But the tricky part is you must put the headline tag <i>outside</i> the &#60;pre&#62 tags for it to work. 
+
+<p><b>If you put t
+his in your HTML doc:</b>
+
+<blockquote><pre>&#60;h1&#62&#60;pre&#62;Fixed width? Fooey!&#60;/pre&#62&#60;/h1&#62</pre>
+</blockquote>
+
+<p><b>You'll get this:</b>
+
+<blockquote><h1><pre>Fixed width? Fooey!</pre></h1>
+</blockquote>
+
+<p>Note, once again, that 
+at "press" time, the &#60;h1&#62 used with &#60;pre&#62 only worked reliably on Netscape browsers. However, you may get similar results by noodling around with the &#60;font size&#62 and &#60;tt&#62 (that's "teletype," as in the machine) tags.
+<br>
+<a name="Links"><h2>Links</h2></a>
+
+<p>
+<blockquote>
+<pre>&#60;a href="?"&#62; creates a link
+&#60;/a&#62; closes a link
+</pre></blockquote>
+<p>Without links, the World Wide Web would be about as useful as a dime at the bottom of a storm drain. After all, links are what make the Web a <i>web</i>. You can add links (or "hyperlinks," if you want to be formal about it) that connect your page to a
+
+ny other accessible site on the Net. Likewise, any other site can link back to you.
+
+<p>When you want to build a link, the first thing you need is the URL of the page you're linking to. 
+
+<p>Then decide which word (or words) on your page will act as the link. The link will be the hot spot, where people can click if they want to go somewhere else. Links are generally underlined, and appear on the browser in a different color than the rest o
+
+f the text (the default color for links is blue, but this can be altered). 
+
+<p>To create a link, you should sandwich your selected words between the "anchor" tags, <b>&#60;a href="?"&#62; and &#60;/a&#62;</b>, replacing the ? with the correct URL. The "href" may seem cryptic, but it's just an abbreviation for Hypertext REFerence.
+
+ Translation: It tells the browser what file it's referencing and where to find it.
+
+<p><b>The HTML for a gratuitous link would appear like this:</b>
+
+<blockquote><tt>&#60;a href="http://www.drweil.com/"&#62;Ask Dr. Weil&#60;/a&#62;!</tt></blockquote>
+
+<p><b>And would appear in a browser like this:</b>
+
+<blockquote> <a href="http://www.drweil.com/" target="_blank">Ask Dr. Weil</a>! 
+  (this example is in a new window)</blockquote>
+
+<p>Note that the URL is enclosed in quotations marks, and that there are are no 
+  spaces between any of the characters, from <b>href</b> to the closing <b>&#62;</b>. 
+  And always remember to close off a link with the &#60;/a&#62; tag, or your entire 
+  page will become one long messy link. And you know how embarassing that can 
+  be. 
+<p>
+<a name="Mailtos"><h2>Mailto</h2></a>
+<blockquote>
+<pre>&#60;a href="mailto:?"&#62; creates a mailto
+&#60;/a&#62; closes a mailto
+</pre></blockquote>
+<p>Not every link on the Web leads to another Web page. Often, pages include links that let people send email to a particular address. This type of link is known as a "mailto," and is just as easy to build as a link to another page.
+
+<p>When creating a link, you sandwich the linked words with the tags &#60;a href="?"&#62; and &#60;/a&#62;. A mailto is exactly the same, except you replace the ? with an email address instead of a URL.
+
+<p><b>If your email address were monkeyboy@webmonkey.com, your HTML might read:</b>
+
+<blockquote><pre>&#60;a href="mailto:monkeyboy@webmonkey.com"&#62;
+monkeyboy@webmonkey.com&#60;/a&#62;</pre>
+</blockquote>
+
+<p><b>And the page would appear like this:</b>
+
+<blockquote><a href="mailto:monkeyboy@webmonkey.com">monkeyboy@webmonkey.com</a>
+</blockquote>
+
+<p><b>Of course, the words can say anything you want, such as:</b>
+
+<blockquote><pre>&#60;a href="mailto:monkeyboy@webmonkey.com"&#62;
+make my life miserable by sending me
+more email&#60;/a&#62;</pre></blockquote>
+
+<p><b>Which appears like this:</b>
+
+<blockquote><a href="mailto:monkeyboy@webmonkey.com">make my life miserable by sending me more email</a>
+</blockquote>
+
+<a name="fontsize"><h2>Font Size</h2></a>
+<p>
+<pre>&#60;font size=#&#62; adjusts font size
+
+&#60;/font&#62; returns font to default size</pre>
+
+<p>Before the release of Netscape Navigator 1.1, typographic options on the Web were limited to the one font and size that any given browser allowed. But the &#60;font size&#62; tag - allowing publishers to vary font sizes, not just from page to page, but
+
+ word to word - gave us one more tool to improve (or, for that matter, impair) the readability of our pages.
+
+<p>The default font size = 3, but you can alter it by inserting a specific numeral, such as &#60;font size=5&#62;, or a relative value, which changes the size in relation to the default: &#60;font size=+2&#62; or &#60;font size=-1&#62;, for example.
+
+<p><b>So if you write in your HTML doc:</b>
+
+<blockquote><pre>&#60;font size=6&#62;I am a big person.&#60;/font&#62;</pre></blockquote>
+
+<p><b>You'll get:</b>
+
+<blockquote><font size=6>I am a big person.</font></blockquote>
+
+<p><b>Unlike the headline tags, which force headlines of different sizes onto different lines, the &#60;font size&#62; tags let you combine different sized words on the same line, so you can</b>
+
+ <p>stride<font size=4> across</font><font size=6> the page </font>like a<font size=7> COLOSSUS!</font>
+
+<p><b>You can choose from seven convenient font sizes:</b>
+
+<p><font size=1>This is &#60;font size=1&#62;.</font>
+
+<p><font size=2>This is &#60;font size=2&#62;.</font>
+
+<p><font size=3>This is &#60;font size=3&#62;.</font>
+
+<p><font size=4>This is &#60;font size=4&#62;.</font>
+
+<p><font size=5>This is &#60;font size=5&#62;.</font>
+
+<p><font size=6>This is &#60;font size=6&#62;.</font>
+
+<p><font size=7>This is &#60;font size=7&#62;.</font>
+
+<p>You should note that the &#60;font size&#62; tag doesn't work in all browsers (Mosaic, for one, doesn't support it).
+
+<br>
+<a name="fontcolor"><h2>Font Color</h2></a>
+
+<p>
+<blockquote>
+<pre>&#60;body text=?&#62; sets the font color
+&#60;body link=?&#62; sets the color of links
+&#60;body vlink=?&#62; sets the color of followed links
+&#60;body alink=?&#62; sets the color of links on click
+&#60;font color=?&#62; changes font color
+&#60;/font&#62; returns font to default color
+</pre></blockquote>
+<p>There are two ways to color text on the Web. One approach is to set the colors for the entire document &#151 specified in the body tag &#151 and the other is to set and change colors as you move through the document, using the font tag. While less flexible, the body tag is often more practical than the font tag, and it's also supported by more browsers. So we'll start there.
+
+<p>Using the body tag, you can set the stage for your entire document, specifying the colors for regular text, links (normally blue), and followed links (usually red). Remember, however, that colors are specified using a numerical code. In the background 
+
+color tutorial, we explain how to calculate this code. But for now, you can just take our word that each number represents a specific hue. 
+
+<p><b>If you type:</b>
+
+<p>
+<blockquote><tt>&#60;body text=#9932cd link=#ff0000 vlink=#00ff00 alink=#000000&#62</tt></blockquote>
+
+<p><font color=#00ff00>You will get a nearly illegible, but correctly colored page, with green text and </font><font color=#ff0000>red</font><font color=#00ff00> links that turn </font><font color=#000000>black</font><font color=#00ff00> on click, and </font>
+<font color=#9932cd>violet</font><font color=#00ff00> after they've been followed.</font>
+
+
+
+<p><b>But what if three colors aren't enough? Or what if you only want to color a single word? Well, lucky for you (if not the rest of us), Netscape's font tags let you do it. If you write in your HTML file:</b>
+
+<blockquote><tt>&#60;font color=#00ff00&#62green&#60/font&#62 with envy.</tt></blockquote>
+
+<p><b>You'll get:</b>
+
+<blockquote>
+
+<p><font color=#00ff00>green</font> with envy.</blockquote>
+
+<p><b>You could even change the color of individual letters, if you really wanted to:</b>
+
+<blockquote><pre>Joseph and the amazing 
+&#60;font color=#ff0000&#62;T&#60;/font&#62;
+&#60;font color=#ff7f00&#62;E&#60;/font&#62;
+&#60;font color=#ffff00&#62;C&#60;/font&#62;
+&#60;font color=#00ff00&#62;H&#60;/font&#62;
+&#60;font color=#0000ff&#62;N&#60;/font&#62;
+&#60;font color=#6b238e&#62;I&#60;/font&#62;
+&#60;font color=#9932cd&#62;C&#60;/font&#62;
+&#60;font color=#ff0000&#62;O&#60;/font&#62;
+&#60;font color=#ff7f00&#62;L&#60;/font&#62;
+&#60;font color=#ffff00&#62;O&#60;/font&#62;
+&#60;font color=#00ff00&#62;R&#60;/font&#62; 
+dreamtag</pre></blockquote>
+
+<p><b>Will give you:</b>
+
+<blockquote>Joseph and the amazing <font color=#ff0000>T</font>
+<font color=#ff7f00>E</font>
+<font color=#ffff00>C</font>
+<font color=#00ff00>H</font>
+<font color=#0000ff>N</font>
+<font color=#6b238e>I</font>
+<font color=#9932cd>C</font>
+<font color=#ff0000>O</font>
+<font color=#ff7f00>L</font>
+<font color=#ffff00>O</font>
+<font color=#00ff00>R</font> dreamtag</blockquote>
+
+<p><b>Which, frankly speaking, was hardly worth the effort. But that's not the point. The point is &#151 you can.</b>
+
+<p>As with all Netscape-specific tags, you should keep in mind that not all browsers support font color.
+
+<p>To find out what codes to use for which colors, visit our <a href="/webmonkey/reference/color_codes/">color 
+  chart</a>. 
+  
+  <br>
+<a name="bolditalic">
+<h2>Bold and Italic Text</h2>
+</a>
+<blockquote>
+
+<pre>&#60;b&#62; creates bold text
+
+&#60;/b&#62; closes bold text
+
+&#60;i&#62; creates italic text
+
+&#60;/i&#62; closes italic text
+
+</pre></blockquote>
+
+<p>Both bold (<b>bold</b>) and italic (<i>italic</i>) text are used to show emphasis. Happily, they're two of the easiest tags to master.
+
+
+
+<p>To create bold text, just sandwich the word(s) you want to appear in bold with the tags &#60;b&#62; and &#60;/b&#62;.
+
+
+
+<p><b>For example, you might want to say something like:</b>
+
+
+
+<blockquote> <tt>&#60;b&#62;Help!&#60;/b&#62; There's a &#60;b&#62;Webmonkey&#60;/b&#62; 
+  in my pants!</tt></blockquote>
+
+
+
+<p><b>Which would look like this:</b>
+
+
+
+<blockquote>
+
+<b>Help!</b> There's a <b>Webmonkey</b> in my pants!
+
+</blockquote>
+
+
+
+<pre> </pre>
+<p><b>To create italics, just sandwich the words you want to appear in italic with the tags &#60;i&#62; and &#60;/i&#62;. For example, you could say:</b>
+
+
+
+<blockquote> <tt>&#60;b&#62;Help!&#60;/b&#62; There's a &#60;b&#62;Webmonkey&#60;/b&#62; 
+  in my pants, and I &#60;i&#62;really&#60;/i&#62; don't like it!</tt></blockquote>
+
+
+
+<p><b>Which will look like:</b>
+
+
+
+<blockquote>
+
+<b>Help!</b> There's a <b>Webmonkey</b> in my pants, and I <i>really</i> don't like it!
+
+</blockquote>
+
+
+
+<p>Occasionally, you'll see alternate tags  - including <b>&#60;strong&#62;</b> and <b>&#60;em&#62;</b> - used to emphasize text; however, both of these tags may be displayed as <i>either</i> bold or italic, depending on the browser.
+
+
+
+<p>So if you want to maintain precise control over the appearance of your text, 
+  opt for the &#60;b&#62; or &#60;i&#62; tags. Conversely, if you take pleasure 
+  in uncertainty, go ahead and use &#60;strong&#62; or &#60;em&#62;.
+<p>
+<center>
+    Lessons provided by <a href="http://www.webmonkey.com" target="_blank">WebMonkey.com </a>
+</center>
+</p>
+</body>
+</html>

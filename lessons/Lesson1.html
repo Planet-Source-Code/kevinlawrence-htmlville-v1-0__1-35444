@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>HTML Lessons</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+  <tr> 
+    <td><a href="#History of HTML">History of HTML</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#Intro to HTML Coding">Intro to HTML Coding</a></td>
+  </tr>
+</table>
+
+<a name="History of HTML"><h2>History of HTML</h2></a>
+
+<p>The history of hypertext markup language is a strange and interesting tale. From its simple start as an online subset of SGML, through political maneuverings of the huge browser companies, to its current piecemeal - but growing - compatibility, the language has weathered a storm of growth, abuse, and innovation. Recently, the battle for control of the standard has focused on functionality. Microsoft and Netscape are both touting W3C compliance as a crucial marketing advantage. And the work being done on the latest HTML draft shows there may be light at the end of the tunnel.
+
+
+
+<p>But it wasn't always this rosy.
+
+<p>The idea behind HTML was a modest one. When Tim Berners-Lee was putting together his first elementary browsing and authoring system for the Web, he created a quick little hypertext language that would serve his purposes. He imagined dozens, or even hundreds, of hypertext formats in the future, and smart clients that could easily negotiate and translate documents from servers across the Net. It would be a system similar to Claris XTND on the Macintosh, but would work on any platform and browser.
+
+<p>The problem, however, turned out to be in the simplicity of Berners-Lee's language. Since it was text-based, you could use any editor or word processor to create or convert documents for the Web. And there was just a handful of tags - anyone could master HTML in an afternoon. The Web flourished.
+Everyone started publishing. The rest is history.
+
+<p>But as more and more content moved to the Web, those creating browsers realized the simple markup language needed much improvement. How should the innovation take place? Tim Berners-Lee certainly wasn't going to be the sole developer of HTML - he never intended to be. So the developers, in the long-held tradition of the Internet, implemented new features in their browsers and then shipped them. If the Web community liked them, they stayed. If not, they were removed.
+
+<p>Look, for example, at the addition of images to the Web. Early browsers were simply text-based, and there was an immediate desire to display figures and icons inline on a page. In 1993, a debate was exploding on the fledgling HTML mailing list, and finally a college student named Marc Andreessen added <tt>&lt;img&gt;</tt> to his Mosaic browser. People objected, saying it was too limited. They wanted <tt>&lt;include&gt;</tt> or <tt>&lt;embed&gt;</tt>, which would allow you to add any sort of medium to a Web page with the much-touted content negotiation used on the client. That was too big a project, according to Marc, and he need to ship ASAP. Mosaic went with <tt>&lt;img&gt;</tt>, and it would be years before including media in a page using <tt>&lt;embed&gt;</tt> or <tt>&lt;applet&gt;</tt> or <tt>&lt;object&gt;</tt> would surface again.
+
+<p>Mosaic shipped with <tt>&lt;img&gt;</tt>, Tim went off to the nascent World Wide Web Consortium, and Marc left for California to start a little browser company called Netscape.
+
+<p>HTML continued to grow, with new, powerful, and exciting tags. We got <tt>&lt;background&gt;</tt>, <tt>&lt;frame&gt;</tt>, <tt>&lt;font&gt;</tt>, and of course, <tt>&lt;blink&gt;</tt>. Microsoft jumped into the game, and <tt>&lt;marquee&gt;</tt>, <tt>&lt;iframe&gt;</tt>, and <tt>&lt;bgsound&gt;</tt> started competing for room in the spec. And all this time, the W3C furiously debated something called HTML 3, a sprawling document outlining all sorts of neat new features that nobody supported (remember <tt>&lt;banner&gt;</tt> and <tt>&lt;fig&gt;</tt>?). It was now 1995, and
+things were an absolute mess.
+
+<p>Something needed to give. If things kept up the way they were going, Netscape and Microsoft would eventually have two completely proprietary versions of HTML, but with no way of supporting the utopian vision of content negotiation. Instead, people would be forced to choose one browser or the other, and surf content specifically created for that platform. Content providers would either have to choose between vendors or spend more resources creating multiple versions of their pages.
+
+<p>There are still vestiges of this lingering on today's Web, but not the nightmare scenario that was anticipated. The HTML arm of the W3C changed course and started collecting and recording <i>current practice</i> in shipping browsers, rather than designing a future, unattainable version of the language. HTML 3 was dropped entirely, and work began on HTML 3.2, which, ironically, was far less technologically advanced than its predecessor. But, more importantly, it was <i>realistic</i> in its goals to give content providers and browser developers a common, if dated, reference from which to work.
+
+<p>So there's one big happy family now, right? Netscape, Microsoft, and the W3C 
+  are all working hard together to create the brightest HTML future possible, 
+  right? Well, reality isn't always that clean. Even recently, the standards wars 
+  have flared up over things like <tt>&lt;layer&gt;</tt> vs. CSS positioning, 
+  or the two competing webcasting proposals. But, for the moment at least, we 
+  have a process in place for dealing with these issues. </p>
+
+<!--NextLesson-->
+<a name="Intro to HTML Coding"> 
+<h2>Intro to HTML Coding</h2>
+</a> 
+<p>HTML is the lingua franca of the Net. It's a simple, universal mark-up language that allows Web publishers to create complex pages of text and images that can be viewed by anyone else on the Web, regardless of what kind of computer or browser is being 
+
+used.
+
+<p>Despite what you might have heard, you don't need any special software to create an HTML page; all you need is a word processor (such as SimpleText, BBEdit, or Microsoft Word) and a working knowledge of HTML. And lucky for all of us, basic HTML is dead
+
+ easy.
+
+<p>HTML is just a series of tags that are integrated into a text document. They're a lot like stage directions - silently telling the browser what to do, and what props to use.
+
+<p>HTML tags are usually English words (such as blockquote) or abbreviations (such as "p" for paragraph), but they are distinguished from the regular text because they are placed in small angle brackets. So the paragraph tag is &#60;p&#62;, and the blockquote tag is &#60;blockquote&#62;. Some tags dictate how the page will be formatted (for instance, &#60;p&#62; begins a new paragraph), and others dictate how the words appear (&#60;b&#62; makes text bold). Still others provide information - such as the title - that doesn't appear on the page itself.
+
+<p>The first thing to remember about tags is that they travel in pairs. Every time you use a tag - say &#60;blockquote&#62; - you must also close it off with another tag - in this case, &#60;/blockquote&#62;. Note the slash - / - before the word "blockquote"; that's what distinguishes a closing tag from an opening tag.
+
+<p>The basic HTML page begins with the tag &#60;html&#62; and ends with &#60;/html&#62;. In between, the file has two sections - the header and the body.
+
+<p>The header - enclosed by the &#60;head&#62; and &#60;/head&#62; tags - contains information about a page that won't appear on the page itself, such as the title. The body  - enclosed by &#60;body&#62; and &#60;/body&#62; - is where the action is. Every
+
+thing that appears on the page is contained within these tags.
+
+<p>So let's create a simple sample page, shall we? The first step, of course, is to create a new text document (remember, it should be saved as "Text Only" or "Plain Text" if you're using a word processor that's fancier than, say, SimpleText) and name it 
+
+"anything.html" where "anything" is, uh, anything.
+
+<p><b>Your basic document will look something like this:</b>
+
+ <blockquote>
+ <tt>
+&#60;html&#62;<br>
+&#60;head&#62;<br>
+&#60;title&#62;Summer&#60;/title&#62;<br>
+&#60;/head&#62;<br>
+<br>
+&#60;body&#62;<br>
+&#60;h1&#62;Summer Vacation&#60;/h1&#62;<br>
+<br>
+  &#60;p&#62;My summer vacation was sunny, silly, and far too short.&lt;/p&gt;<br>
+<br>
+  &#60;p&#62;How many days till Christmas?&lt;/p&gt;<br>
+<br>
+&#60;/body&#62;<br>
+&#60;/html&#62;<br>
+
+</tt>
+</blockquote>
+
+<p>So within the &#60;head&#62; tags, we have the title - "Summer" -
+which will appear in the bar across the top of your browser (the title
+of this Webmonkey page, as you can see, is "Webmonkey - HTML - HTML").
+
+<p>Within the body tags, we have everything that will appear on the page. In this case it would look something like this:
+
+<blockquote>
+<br>
+<h1>Summer Vacation</h1>
+
+<p>My summer vacation was sunny, silly, and far too short.
+
+<p>How many days till Christmas?
+</blockquote>
+<br>
+
+<p>As you might have guessed, &#60;h1&#62; is the tag for a <a href="Lesson2.html#Headlines">headline</a> (the largest headline, in fact) and &#60;p&#62;, of course, marks the beginning of a new <a href="Lesson2.html#Paragraphs">paragraph</a
+
+>. A &#60;p&#62; tag is one of the few tags that doesn't need to be closed off by a corresponding &#60;/p&#62;, because the paragraph's end is implied with the next formatting tag.
+
+<p>Seems simple, huh? Well, it is.
+
+
+<p>Especially since you can see what HTML people have used to build any Web page 
+  you find by simply viewing 
+  source. Oh, and don't go thinking you need your own homepage to practice, 
+  either. You can save HTML documents on your local drive and then open them up 
+  using the Open option under the File menu on your browser. 
+<p>
+<center>
+    Lessons provided by <a href="http://www.webmonkey.com" target="_blank">WebMonkey.com </a>
+</center>
+</p>
+</body>
+</html>
