@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>No Right Click</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="Javascript1.2">
+message = "No right clicking!";
+
+function NoRightClick(b) {
+   if(((navigator.appName=="Microsoft Internet Explorer")&&(event.button > 1))
+   ||((navigator.appName=="Netscape")&&(b.which > 1))){
+   alert(message);
+   return false;
+   }
+}
+document.onmousedown = NoRightClick;
+
+// -->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+  <tr> 
+    <td> 
+      <h2>No Right Click</h2>
+    </td>
+  </tr>
+  <tr> 
+    <td>Example:</td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="666666"> Try to right click on the page.
+    <td> 
+  </tr>
+  <tr> 
+    <td>Instructions:</td>
+  </tr>
+  <tr> 
+    <td bgcolor="666666">Insert the following code anywhere between the head tags.</td>
+  </tr>
+  <tr> 
+    <td> 
+      <textarea cols="50" rows="5"><script language="Javascript1.2">
+message = "No right clicking!";
+
+function NoRightClick(b) {
+   if(((navigator.appName=="Microsoft Internet Explorer")&&(event.button > 1))
+   ||((navigator.appName=="Netscape")&&(b.which > 1))){
+   alert(message);
+   return false;
+   }
+}
+document.onmousedown = NoRightClick;
+
+// -->
+</script>
+</textarea>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

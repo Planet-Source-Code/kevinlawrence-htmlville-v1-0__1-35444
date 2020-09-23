@@ -1,0 +1,553 @@
+<html>
+<head>
+<title>HTML Lesson 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="75%" border="0" cellspacing="1" cellpadding="1">
+  <tr> 
+    <td><a href="#BackgroundImages">Background Images</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#BackgroundColors">Background Colors</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#LineBreaks">Line Breaks</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#AligningText">Aligning Text</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#AddingImages">Adding/Aligning Images</a></td>
+  </tr>
+  <tr> 
+    <td><a href="#ImageBorders">Image Borders</a></td>
+  </tr>
+</table>
+<br>
+<a name="BackgroundImages">
+<h2>Background Images</h2></a><BR>
+
+
+
+<p>
+
+<blockquote>
+
+<pre>&#60;body background=?&#62; sets the background image
+
+</pre></blockquote>
+
+<p>The &#60;body background&#62 tag allows you to use an image file for the
+
+background of your Web page. A large image may only appear once
+
+(depending on the size of the browser window), but smaller images will
+
+be redrawn as many times as necessary to fill a page - a process known
+
+as <b>tiling</b>.
+
+
+
+<p><b>If you write in your HTML doc:</b>
+
+
+
+<blockquote><pre>&#60;body background="kitty.gif"&#62</pre></blockquote>
+
+
+
+<p><b>Then kitty will appear in your background as many times as the
+
+browser window and the size of your image will allow. If, for instance,
+
+it's a small image - say, 20 by 20 pixels - and the page is being viewed in
+
+a 480 by 640 browser window, then kitty would appear an astounding 768
+
+times. </b>
+
+
+
+<p>Keep in mind that there's no way to <i>prevent</i>&nbsp;a background
+
+image from tiling. So if you want to make sure it doesn't, you'll have
+
+to make the image wide enough and tall enough to accommodate large
+
+monitors.
+
+
+
+<p>On this <a href="exampage.html">example page</a>, for instance, we wanted our background image to create
+
+a stripe down the left-hand side, and we wanted the image file to be as
+
+small as possible. However, we didn't want more than one stripe to
+
+appear, no matter how wide the monitor is (in other words, we wanted the
+
+image to tile vertically, but not horizontally). To accomplish this, we
+
+created a short, wide, striped image - 1,200 by 24 pixels - that looks
+
+something like this (only larger):
+
+
+
+<p align=center><IMG  WIDTH=280 HEIGHT=24 SRC="http://static.wired.com/webmonkey/html/stuff/littlebackground.gif" alt="[Background
+
+image - only smaller]"></p>
+
+
+
+<p>That way, someone would need a browser window at least 1201 pixels -
+
+or just under 17 inches - wide to see a second stripe, but the image
+
+size is still quite small (25K). Note that the pixel-to-inch ratio is
+
+adjustable, and varies from platform to platform; 72 pixels per inch is
+
+standard, since it corresponds with the typographic rule of 72 "points"
+
+per inch.
+
+
+
+<p>Note: Almost the whole browser gang supports background images (including Netscape 
+  1.1 and later, and all versions of Internet Explorer). Only older versions of 
+  NCSA Mosaic and the AOL browser will turn down your background image. yourself. 
+
+<br>
+<h2><a name="#BackgroundColor">Background Color</a></h2>
+
+
+
+<p>
+
+<blockquote>
+
+<pre>&#60;body bgcolor=?&#62; sets the background color
+
+</pre></blockquote>
+
+<font face="arial, geneva" size=2> 
+<p>To your HTML file, you are a god. And the background of the page is
+
+the firmament. It can be midnight black or forest green, depending on
+
+your whim.
+
+
+
+<p>The background color is specified within the &#60;body&#62; tag at
+
+the beginning of your document. So, if you write in your HTML doc
+
+
+
+<ul><pre>&#60;body bgcolor=yellow&#62;</pre></ul>
+
+
+
+<p>You will create with great efficacy a yellow background.
+
+
+
+<p>"So," you may be thinking, "which colors can I use? If I type:
+
+
+
+<ul><pre>&#60;body bgcolor=periwinkle&#62;</pre></ul>
+
+
+
+"will the browser know I'm looking for a light bluish gray?" The short
+
+answer is: No. Only a limited number of colors can be specified by name
+
+(periwinkle isn't one of them), and different browsers recognize
+
+different sets of colors. So if you want to be precise about your background (and I know you do), you'll want to replace the <i>name</i> of the color,
+
+with a <i>hexadecimal code</i>. So your HTML would look something like
+
+this:
+
+
+
+<ul><pre>&#60;body bgcolor=#ffffff&#62;</pre></ul>
+
+
+
+<p>Notice all those "f"s in the code? Well, that's how one says "white"
+
+in hexadecimal. If you'd like to know how to calculate that number,
+
+tough luck.
+
+
+
+<p>No, no. Just kidding. The "ffffff" represents the RGB value of white,
+
+translated into hexadecimal ... stay with me.... Any color that can be
+
+displayed on a monitor can be described by its RGB value - its relative
+
+amounts of red, green, and blue (each of which is expressed as a
+
+two-digit number, such as 51 or 14 or 00).
+
+
+
+<p>In order for a Web browser to understand the RGB values, they must
+
+each be translated into a hexadecimal (or base-16) number. Then the
+
+resulting two-digit hexadecimal ("hex" for short) numbers are strung
+
+together into a single six-digit code. So in the example above, the
+
+first two "f"s stand for the red value, the next two stand for green,
+
+and the last two for blue.
+
+
+
+<p>Now, if you don't want to bother with calculating those numbers, you
+
+can just consult our <a href="/webmonkey/reference/color_codes/">color chart</a>.<p>But if you're a real do-it-yourselfer, you'll probably want to do the
+
+calculations yourself. So grab your abacus for this sexy/hexy sidetrack:
+
+
+
+<p>Take this <font color=#33db99>lovely sea green</font> with the RGB
+
+values R=51, G=219, B=153.
+
+
+
+<p>To translate this into hexadecimal, you should first take the value
+
+of Red - in this case, 51 - and divide it by 16. The balance is 3.1875.
+
+The integer, 3, will be the first number in the hexadecimal formula. The
+
+remainder (0.1875) should be multiplied by 16, which also results in the
+
+number 3. So, 51 translates to 33 in hex.
+
+
+
+<p>But sometimes the numbers don't work out as evenly; often you'll get
+
+integers and remainders that translate to 11 or 14, for instance. And in
+
+those cases, we translate the two-digit number into a single letter
+
+(that's where all the d's and f's come in), where 10=A, 11=B, 12=C,
+
+13=D, 14=E, and 15=F. This becomes relevant to our lovely sea green when
+
+we calculate the hexadecimal equivalent of its Green value, which is
+
+219. When we divide it by 16, we get 13.69. We translate 13 to D, and
+
+then multiply the remainder - 0.69 - by 16, and get 11, which equals B.
+
+
+
+<p>Repeat this formula for the Blue value, and then string them together
+
+(you should get 33DB99). Soon, you'll be speaking fluent Hex. Hence, you
+
+may now go to your dinner party and bore the pants off anyone who'll
+
+give you the time of day, by expressing their street address
+
+hexadecimally. You're welcome.
+
+</font>
+
+
+<h2><a name="LineBreaks">Line breaks</a></h2>
+<p>
+<blockquote>
+<pre>&#60;br&#62; inserts a line break
+</pre></blockquote>
+<font face="arial, geneva" size=2> 
+<p>In most cases, the paragraph tag, &#60;p&#62; - which skips a line before starting a new one - is the best way to divide up your text. However, there may be occasions when you want to end a line of text and 
+
+start a new one without skipping a line in between. In these cases, it's usually best to insert a line break, using the &#60;br&#62; tag.
+
+<p><b>The HTML for a poem using line breaks might look like this:</b>
+
+<blockquote>
+<pre>I really love the Internet.&#60;br&#62;
+I could surf all day!&#60;br&#62;
+My bosses haven't caught me yet,&#60;br&#62;
+If they do, they'll dock my pay!
+</pre>
+</blockquote>
+
+<p><b>And will read like this:</b>
+
+<blockquote>
+I really love the Internet.<br>
+I could surf all day!<br>
+My bosses haven't caught me yet,<br>
+If they do, they'll dock my pay!
+</blockquote>
+
+
+<a name="AligningText"><h2>Aligning Text</h2></a><BR>
+
+<p>
+
+<blockquote>
+
+<pre>&#60;p align=left&#62; aligns a paragraph to the left
+
+&#60;p align=right&#62; aligns a paragraph to the right
+
+&#60;p align=center&#62; centers a paragraph
+
+</pre></blockquote>
+
+<font face="arial, geneva" size=2> 
+<p>Alignment attributes can be added to the &#60;p&#62; tag to align the text in a paragraph to the left, right or center (though large chunks of text are rarely aligned right or center). 
+
+
+
+<P><B>So if you were to write this in your HTML doc:</b>
+
+
+
+<blockquote>
+
+<pre>&#60;p align=left&#62;I fear my bathroom window. It opens to
+
+an airshaft, and when it's hot outside I leave it open.
+
+Unfortunately, if it's hot enough for me to open the
+
+bathroom window, it is also usually hot enough for
+
+my neighbors to open their bathroom windows.
+
+
+
+&#60;p align=center&#62;I can hear everything. I can hear
+
+them argue, and I can hear them flush the toilet.
+
+The heat is bad enough; I don't need to know
+
+whether or not Elaine upstairs thinks Jeremy
+
+should shave his goatee.
+
+
+
+&#60;p align=right&#62;When I moved into the bigger, cheaper
+
+apartment next door, I couldn't shake the
+
+memory of the wild summer parties I'd
+
+overheard. It took me four weeks to even
+
+&#60;i&#62;think&#60;/i&#62; about using the bathtub. I scoured
+
+it until it gleamed, showered, and attempted to
+
+sleep. I couldn't. So I asked that it be replaced.
+
+
+
+</pre></blockquote>
+
+
+
+<p><b>You might consider moving. Oh, and your page would appear like this:</b>
+
+
+
+<blockquote>
+
+<p align=left>I fear my bathroom window. It opens to
+
+an airshaft, and when it's hot outside I leave it open.
+
+Unfortunately, when it's hot enough for me to open the
+
+bathroom window, it is usually hot enough for
+
+my neighbors to open their bathroom windows.
+
+
+
+
+
+<p align=center>I can hear everything. I can hear them argue, and 
+
+I can hear them flush the toilet. The heat is bad enough;
+
+I don't need to know whether or not Elaine upstairs
+
+thinks Jeremy should shave his goatee.
+
+
+
+
+
+<p align=right>When I moved into the bigger, cheaper apartment
+
+next door, I couldn't shake the memory of the wild summer parties
+
+I'd overheard. It took me four weeks to even <i>think</i> about using the bathtub.
+
+I scoured it until it gleamed, showered and attempted to
+
+sleep. I couldn't. So I asked that it be replaced.
+
+</blockquote>
+
+
+
+<p><b>Of course, you can use paragraph tags for text that's shorter than a full-on paragraph. For instance, you may want to center some words, like so:</b>
+
+
+
+<blockquote>
+
+<pre>
+
+&#60;p align=center&#62;If someone offers you
+
+&#60;p align=center&#62;a breath mint,
+
+&#60;p align=center&#62;take it.
+
+</pre>
+
+</blockquote>
+
+
+
+<p><b>They'll appear like this:</b>
+
+<blockquote>
+
+<p align=center>If someone offers you
+
+<p align=center>a breath mint,
+
+<p align=center>take it.
+
+
+
+</blockquote>
+
+</font> </font> 
+
+<br>
+<h2><a name="AddingImages">Adding/Aligning Images</a></h2><BR>
+
+<p>
+<blockquote>
+<pre>&#60;img src="?"&#62; places an image
+&#60;img align=?&#62; aligns an image
+</pre></blockquote>
+<p>Before you can put an image on a Web page, you need to know the name of the image file and where it's stored on your server (its source, of course.) That way you can instruct the browser on how to find the image it needs.
+
+<p>The easiest place to save the image is in the same folder or directory as your HTML source file, which is where the browser will automatically look for it. If you have many images to organize, you may want to place them in a single folder, called "imag
+
+es" or "stuff," then place that folder (or directory) in the same directory as your HTML file.
+
+<p>My image is called "<b>monkey.gif,</b>" and it's in a folder called "<b>stuff,</b>" which is in the same folder on our server as this HTML file. 
+
+<p><b>The HTML for my monkey image will read like this:</b>
+
+<blockquote><pre>&#60;img src="stuff/monkey.gif"&#62;</pre></blockquote> 
+
+<p><b>The picture looks like this:</b> 
+
+<p><IMG  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif">
+
+<p><b>Simple, huh? Now, using the image align tag, I can also control where the image is placed on the page. For instance, I can line it up on the left:</b>
+
+<blockquote><tt>&#60;img align=left src="stuff/monkey.gif"&#62;</tt></blockquote>
+
+<p><b>Which pushes it to the left:</b>
+
+<p><IMG align=left  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif">
+
+<br clear=all>
+
+<p><b>Or I can line it up on the right:</b>
+
+<blockquote><tt>&#60;img align=right src="stuff/monkey.gif"&#62;</tt></blockquote>
+
+<p><b>Which - surprise! - pushes it to the right:</b>
+
+<IMG align=right  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif">
+
+<br clear=all>
+
+<p>Centering an image is a little trickier, because &#60;img align=center&#62; doesn't work on most browsers. Instead, you'll have to first center the paragraph, with &#60;p align=center&#62; (even if you don't have any text), and then place the image.
+
+<p><b>So, to center our little monkey, we'd write:</b>
+
+<blockquote><TT>&#60;p align=center&#62;&#60;img src="stuff/monkey.gif"&#62;</TT></blockquote>
+
+<p><b>And it would appear like this:</b>
+
+<blockquote>
+<p align=center><IMG  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif">
+</blockquote>
+
+<br>
+<h2><a name="ImageBorders">Image Borders</a></h2>
+<p>
+<blockquote>
+<pre>&#60;img border=#&#62; sets the border size of an image
+</pre></blockquote>
+<p>The image border is the line that appears around the edge of a picture placed on a Web page. Normally, this border will only appear if you use the image as a link; however, you can deliberately create a border of any size around your image by using the
+
+ &#60;img border=#&#62; tag, and replacing the # with a border size, from 0-99.
+
+<p>Conversely, you can prevent a border from appearing around a linked image by setting the border size to zero (&#60;img border=0&#62;).
+
+<p><b>Our normal image, with the border <i>unspecified</i> has no border at all:</b>
+
+<blockquote><tt>&#60;img src="stuff/monkey.gif"&#62;</tt></blockquote>
+
+<p align=center><IMG  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif">
+
+<p><b>But we can add a border, using &#60;img border=#&#62;.</b>
+
+<blockquote><tt>&#60;img border=5 src="stuff/monkey.gif"&#62; </tt></blockquote>
+
+<p align=center><IMG border=5  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif">
+
+
+<blockquote><tt>&#60;img border=15 src="stuff/monkey.gif"&#62; </tt></blockquote>
+
+<p align=center><IMG border=15  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif">
+
+
+<blockquote><tt>&#60;img border=30 src="stuff/monkey.gif"&#62; </tt></blockquote>
+
+<p align=center><IMG border=30  WIDTH=66 HEIGHT=71 SRC="http://static.wired.com/webmonkey/html/stuff/monkey.gif"> 
+<p>
+<center>
+    Lessons provided by <a href="http://www.webmonkey.com" target="_blank">WebMonkey.com </a>
+</center>
+</p>
+</body>
+</html>
